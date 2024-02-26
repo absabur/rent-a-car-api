@@ -39,6 +39,7 @@ class AllCarView(APIView):
         all_car = Car.objects.all()
         serial_data = AllCarSerializer(all_car, many=True)
         return Response(serial_data.data)
+    
 class AllCategoryView(APIView):
     def get(self, request):
         cate = Category.objects.all()

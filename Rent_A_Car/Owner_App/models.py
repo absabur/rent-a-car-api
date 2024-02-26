@@ -17,6 +17,7 @@ class Car(models.Model):
     engine_cc = models.FloatField()
     number_of_seats = models.IntegerField()
     out_of_service = models.BooleanField(default=False)
+    per_day_rent = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
